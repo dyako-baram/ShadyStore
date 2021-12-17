@@ -40,18 +40,26 @@
           </defs>
         </svg>
       </a>
+      <a href="#" class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+      </a>
       <ul class="links">
         <li>
           <a href="#Home" title="Home">home</a>
         </li>
         <li>
+          <a href="#Products" title="Products">products</a>
+        </li>
+        <li>
           <a href="#Contact" title="Contact">contact</a>
         </li>
         <li>
-          <a href="#Sotre" title="Store">store</a>
+          <a href="#AboutUs" title="About Us">about us</a>
         </li>
         <li>
-          <a href="#AboutUs" title="About Us">about us</a>
+          <a href="#login/signup" title="login/signup">login/signup</a>
         </li>
       </ul>
     </nav>
@@ -117,7 +125,7 @@
         <h1>Filter:</h1>
         <hr />
         <div class="group"></div>
-        <div>
+        <div class="group_category">
           <h2>Category</h2>
           <ul>
             <li>
@@ -146,7 +154,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="group_category">
           <h2>Price</h2>
           <ul>
             <li>
@@ -283,5 +291,12 @@
         <p>Shady Store &copy; 2021</p>
       </section>
     </footer>
+    <script>
+      const toggle=document.getElementsByClassName('burger')[0]
+      const nav=document.getElementsByClassName('links')[0]
+      toggle.addEventListener('click',()=>{
+          nav.classList.toggle('active')
+      })
+    </script>
   </body>
 </html>
