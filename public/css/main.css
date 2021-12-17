@@ -1,0 +1,229 @@
+@import url("/fonts/roboto-thin.ttf");
+@import url("/fonts/roboto-regular.ttf");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 5px 5px #dfdfdf;
+}
+.nav svg {
+  margin: 5px;
+  cursor: pointer;
+}
+.nav .links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.nav .links li a {
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 1rem;
+}
+
+.hero_bg {
+  position: relative;
+  width: 100%;
+}
+.hero_bg img {
+  width: 100%;
+  filter: brightness(30%);
+}
+.hero_bg .hero_text {
+  position: absolute;
+  color: #f0f9ff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero_bg .hero_text h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+.hero_bg .hero_text p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.hero_bg .hero_text p span {
+  font-weight: 400;
+  color: #3794ff;
+}
+.hero_bg .hero_text .hero_btn {
+  color: white;
+  display: block;
+  text-decoration: none;
+  background: #3794ff;
+  margin-top: 0.7rem;
+  padding: 0.6rem 0.9rem;
+  text-align: center;
+  font-weight: 400;
+}
+.hero_bg .hero_text .hero_btn:hover {
+  background: #3C72FF;
+}
+
+.main {
+  margin: 1rem;
+}
+.main .main_text {
+  position: relative;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: #88aeff;
+  margin-bottom: 1rem;
+}
+.main h1 {
+  text-align: center;
+  padding: 9px 0;
+}
+.main .images_section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 0.5rem;
+  column-gap: 0.4rem;
+}
+.main .images_section .images img {
+  width: 100%;
+  filter: brightness(40%);
+}
+.main .images_section figure {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  box-shadow: 0 5px 5px #c4c4c4;
+  font-size: 0.8rem;
+}
+.main .images_section figure figcaption {
+  padding: 0.3rem 0.4rem;
+  position: absolute;
+  font-size: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+}
+
+.shop_section {
+  display: flex;
+  margin: 5px 0;
+  justify-content: space-around;
+}
+.shop_section .shop_aside {
+  width: 20%;
+  box-shadow: 0px 5px 5px #c4c4c4;
+}
+.shop_section .shop_aside ul {
+  list-style: none;
+}
+.shop_section .shop_aside ul li {
+  padding-left: 5px;
+}
+.shop_section .shop_aside h1 {
+  font-size: 1.6rem;
+  margin-left: 5px;
+}
+.shop_section .shop_aside h2 {
+  margin-top: 7px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.shop_section .shop_main {
+  width: 60%;
+  margin: 1rem 0;
+  box-shadow: 0px 5px 5px #c4c4c4;
+  display: grid;
+  gap: 10px 10px;
+  grid-template-columns: 1fr 1fr;
+}
+.shop_section .shop_main .card {
+  cursor: pointer;
+  display: flex;
+  color: #6b6b6b;
+  box-shadow: 0px 5px 5px #c4c4c4;
+}
+.shop_section .shop_main .card img {
+  width: 50%;
+  height: auto;
+}
+.shop_section .shop_main .card .card_header {
+  padding: 0 10px;
+  font-weight: 400;
+}
+.shop_section .shop_main .card ul {
+  list-style: none;
+  padding: 0 15px;
+}
+.shop_section .shop_main .card ul li {
+  color: #838383;
+  font-weight: 400;
+}
+
+footer {
+  color: #f0f9ff;
+  background-color: #282d32;
+  display: flex;
+  flex-direction: column;
+}
+footer a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #579ae7;
+}
+footer main {
+  display: flex;
+  justify-content: space-around;
+}
+footer main .footer_section_header {
+  margin: 15px 0;
+}
+footer main .product_section_footer ul {
+  list-style: none;
+}
+footer main .contact_section_footer .links_section_footer {
+  display: flex;
+  flex-direction: column;
+}
+footer .contact_section_footer h4 {
+  margin: 5px 0;
+}
+footer .copy-right-footer {
+  text-align: center;
+  margin: 15px 0;
+}
+
+@media (max-width: 767.98px) {
+  .shop_section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .shop_section .shop_aside {
+    width: 80%;
+    order: 1;
+  }
+  .shop_section .shop_main {
+    width: 80%;
+  }
+  .shop_section .shop_main .card {
+    flex-direction: column;
+  }
+  .shop_section .shop_main .card img {
+    width: 100%;
+  }
+  .shop_section .shop_main .card ul {
+    margin-bottom: 5px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
