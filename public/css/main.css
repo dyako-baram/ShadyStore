@@ -44,10 +44,10 @@
   text-decoration: none;
   text-transform: capitalize;
   padding: 0 1rem;
+  color: #3794ff;
 }
-.nav .links li a:hover {
-  color: white;
-  background-color: #3C72FF;
+.nav .links li a:visited {
+  color: #3794ff;
 }
 
 .hero_bg {
@@ -228,7 +228,7 @@ footer .copy-right-footer {
 }
 
 .login {
-  width: 80%;
+  width: 50%;
   margin: 1rem auto;
   box-shadow: 5px 5px 5px #c4c4c4;
   display: flex;
@@ -238,7 +238,7 @@ footer .copy-right-footer {
   width: 100%;
 }
 .login .login_form {
-  margin: 0rem 3rem;
+  margin: 0rem 2rem;
 }
 .login .login_form .form_msg {
   font-size: 0.8rem;
@@ -250,6 +250,15 @@ footer .copy-right-footer {
   color: #3794ff;
   font-weight: 400;
 }
+.login .login_form .form_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.login .login_form .form_logo a {
+  display: block;
+}
 .login .login_form .form_group {
   margin: 0.5rem 0;
 }
@@ -260,10 +269,14 @@ footer .copy-right-footer {
 .login .login_form .form_group input[type=email] {
   border: 1px #b3b3b3 solid;
   padding: 0.2rem 0;
+  display: block;
+  width: 100%;
 }
 .login .login_form .form_group input[type=password] {
   border: 1px #b3b3b3 solid;
   padding: 0.2rem 0;
+  display: block;
+  width: 100%;
 }
 .login .login_form .form_group .login_submit {
   width: 100%;

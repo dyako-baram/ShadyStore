@@ -59,7 +59,7 @@
           <a href="#AboutUs" title="About Us">about us</a>
         </li>
         <li>
-          <a href="#login/signup" title="login/signup">login/signup</a>
+          <a id="login_signed" href="login.html" title="login/signup">login/signup</a>
         </li>
       </ul>
     </nav>
@@ -253,6 +253,7 @@
     </section>
     <!-- Footer area -->
     <footer>
+      <p id="myEmail" style="text-align: center;font-size: 1.3rem; margin-top: .3rem;color: #3C72FF;"></p>
       <main>
         <section class="product_section_footer">
           <h2 class="footer_section_header">products</h2>
@@ -291,12 +292,6 @@
         <p>Shady Store &copy; 2021</p>
       </section>
     </footer>
-    <script>
-      const toggle=document.getElementsByClassName('burger')[0]
-      const nav=document.getElementsByClassName('links')[0]
-      toggle.addEventListener('click',()=>{
-          nav.classList.toggle('active')
-      })
-    </script>
+    <script src="js/app.js"></script>
   </body>
 </html>

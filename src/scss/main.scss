@@ -46,10 +46,11 @@ $main-color-light:rgb(55, 148, 255);
         text-decoration: none;
         text-transform: capitalize;
         padding: 0 1rem;
-        &:hover{
-            color: white;
-            background-color: #3C72FF;
+        color: $main-color-light;
+        &:visited{
+            color: $main-color-light;
         }
+        
       }
     }
   }
@@ -238,22 +239,18 @@ footer{
 }
 // login page
 .login{
-    width: 80%;
+    width: 50%;
     margin:1rem auto;
     box-shadow: 5px 5px 5px rgb(196, 196, 196);
     display: flex;
     font-weight: 400;
     .login_image{
         img{
-            // overflow: hidden;
-            // background-size: cover;
-            // background-position: center;
             width: 100%;
         }
-        
     }
     .login_form{
-        margin: 0rem 3rem;
+        margin: 0rem 2rem;
         .form_msg{
             font-size: .8rem;
             color: #9c9c9c;
@@ -264,19 +261,33 @@ footer{
                 font-weight: 400;
             }
         }
+        .form_logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+            a{
+                display: block;
+            }
+        }
         .form_group{
             margin: .5rem 0;
             label{
                 font-size: .8rem;
                 font-weight: 400;
             }
+            
             input[type=email]{
                 border:1px rgb(179, 179, 179) solid;
                 padding: .2rem 0;
+                display: block;
+                width: 100%;
             }
             input[type=password]{
                 border:1px rgb(179, 179, 179) solid;
                 padding: .2rem 0;
+                display: block;
+                width: 100%;
             }
             .login_submit{
                 width: 100%;
