@@ -306,7 +306,7 @@ footer{
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 15px  rgb(177, 174, 174);
-    width: 80%;
+    width: 50%;
     text-transform: capitalize;
     margin: 1rem auto;
     line-height: 1.3rem;
@@ -344,6 +344,72 @@ footer{
     }
     ul{
         list-style: none;
+    }
+}
+.feedback{
+    box-shadow: 0px 0px 15px  rgb(177, 174, 174);
+    width: 50%;
+    border-radius: 4px;
+    margin: 1rem auto;
+    padding: 1rem;
+    .heading{
+        text-align: center;
+        margin-bottom: 1rem;
+        h1{
+            font-weight: 400;
+        }
+    }
+    .form_group{
+        width: 80%;
+        margin:auto;
+        label{
+            font-weight: 400;
+            text-transform: capitalize;
+            margin: .3rem 0;
+        }
+        input,textarea{
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 12px 20px;
+        }
+        textarea{
+            resize: vertical;
+        }
+        &_btn{
+            width: 80%;
+            margin:1rem auto;
+            display: flex;
+            column-gap: 10px;
+            justify-content: space-between;
+            
+            row-gap: .3rem;
+            input{
+                padding: .4rem;
+                font-weight: 400;
+                color:white;
+                border: none;
+                width: 100%;
+                border-radius: 4px;
+                &[type=submit]{
+                    background-color: $main-color-light;
+                }
+                &[type=reset]{
+                    background-color: rgba(255, 42, 42, 0.815);
+                }
+            }
+            
+        }
+        label{
+            display: block;
+        }
+        input{
+            display: block;
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+        }
     }
 }
 // tablets and below
@@ -412,6 +478,12 @@ footer{
         } 
         }
         
+    }
+    .contact{
+        width: 80%;
+    }
+    .feedback{
+        width: 80%;
     }
     
 }

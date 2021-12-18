@@ -293,7 +293,7 @@ footer .copy-right-footer {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 0px 15px #b1aeae;
-  width: 80%;
+  width: 50%;
   text-transform: capitalize;
   margin: 1rem auto;
   line-height: 1.3rem;
@@ -328,6 +328,71 @@ footer .copy-right-footer {
 }
 .contact ul {
   list-style: none;
+}
+
+.feedback {
+  box-shadow: 0px 0px 15px #b1aeae;
+  width: 50%;
+  border-radius: 4px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.feedback .heading {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.feedback .heading h1 {
+  font-weight: 400;
+}
+.feedback .form_group {
+  width: 80%;
+  margin: auto;
+}
+.feedback .form_group label {
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 0.3rem 0;
+}
+.feedback .form_group input, .feedback .form_group textarea {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 12px 20px;
+}
+.feedback .form_group textarea {
+  resize: vertical;
+}
+.feedback .form_group_btn {
+  width: 80%;
+  margin: 1rem auto;
+  display: flex;
+  column-gap: 10px;
+  justify-content: space-between;
+  row-gap: 0.3rem;
+}
+.feedback .form_group_btn input {
+  padding: 0.4rem;
+  font-weight: 400;
+  color: white;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+}
+.feedback .form_group_btn input[type=submit] {
+  background-color: #3794ff;
+}
+.feedback .form_group_btn input[type=reset] {
+  background-color: rgba(255, 42, 42, 0.815);
+}
+.feedback .form_group label {
+  display: block;
+}
+.feedback .form_group input {
+  display: block;
+  width: 100%;
+}
+.feedback .form_group textarea {
+  width: 100%;
 }
 
 @media (max-width: 767.98px) {
@@ -388,6 +453,14 @@ footer .copy-right-footer {
   .login .login_form .form_logo {
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .contact {
+    width: 80%;
+  }
+
+  .feedback {
+    width: 80%;
   }
 }
 
