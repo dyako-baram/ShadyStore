@@ -59,7 +59,7 @@
           <a href="#AboutUs" title="About Us">about us</a>
         </li>
         <li>
-          <a href="login.html" title="login/signup">login/signup</a>
+          <a href="login.html" title="login/signup" id="login_signed">login/signup</a>
         </li>
       </ul>
     </nav>
@@ -170,7 +170,7 @@
       form.addEventListener("submit", (e) => {
         document.cookie = `email=${email.value.trim()}`;
         document.cookie = `password=${password.value.trim()}`;
-
+        document.location.replace("index.html")
       });
     </script>
 </body>
