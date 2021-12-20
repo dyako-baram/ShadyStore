@@ -13,7 +13,7 @@ const isSigned = document.querySelector("#login_signed");
 const account = document.querySelector("#nav_link_account");
 
 const cEmail = getCookie("email");
-if (cEmail != "") {
+if (cEmail != "" && cEmail!=null) {
   isSigned.innerText = `Logout`;
   isSigned.title="Logout"
   isSigned.href="logout.html"

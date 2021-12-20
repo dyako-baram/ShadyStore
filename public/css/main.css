@@ -169,6 +169,9 @@
   gap: 10px 10px;
   grid-template-columns: 1fr 1fr;
 }
+.shop_section .shop_main a {
+  text-decoration: none;
+}
 .shop_section .shop_main .card {
   cursor: pointer;
   display: flex;
@@ -330,6 +333,83 @@ footer .copy-right-footer {
   list-style: none;
 }
 
+.detail {
+  width: 80%;
+  margin: 1rem auto;
+  box-shadow: 0 5px 5px #c4c4c4;
+  color: black;
+}
+.detail .product {
+  width: 100%;
+}
+.detail .product .image img {
+  width: 100%;
+}
+.detail .product .product_detail {
+  margin: 0.3rem 0.5rem;
+}
+.detail .product .product_detail h3 {
+  font-weight: 400;
+  text-align: center;
+}
+.detail .product .price {
+  display: flex;
+  margin: 0.5rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.detail .product .price .price_number {
+  cursor: default;
+  color: red;
+  font-weight: 400;
+}
+.detail .product .price .price_number del {
+  font-weight: 400;
+}
+.detail .product .price .price_discount {
+  color: white;
+  background: red;
+  display: inline-block;
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+  cursor: default;
+}
+
+.comment_header {
+  width: 80%;
+  margin: 1rem auto;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.comment {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 0.4rem;
+  box-shadow: 0 5px 5px #c4c4c4;
+}
+.comment h1 {
+  font-weight: 400;
+}
+.comment h5 {
+  color: #3794ff;
+}
+.comment p {
+  color: black;
+}
+
+.nocomment {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 0.4rem;
+  box-shadow: 0 5px 5px #c4c4c4;
+  color: black;
+}
+.nocomment h1 {
+  color: red;
+  font-weight: 400;
+}
+
 .feedback {
   box-shadow: 0px 0px 15px #b1aeae;
   width: 50%;
@@ -395,6 +475,23 @@ footer .copy-right-footer {
   width: 100%;
 }
 
+@media (max-width: 575.98px) {
+  .hero_bg .hero_text h1 {
+    font-size: 1.4rem;
+  }
+
+  .login {
+    width: 80%;
+  }
+
+  .main .images_section figure figcaption {
+    font-size: 1.3rem;
+  }
+
+  footer main {
+    font-size: small;
+  }
+}
 @media (max-width: 767.98px) {
   .nav {
     flex-direction: column;
@@ -444,6 +541,10 @@ footer .copy-right-footer {
     font-size: 2rem;
   }
   .hero_bg .hero_text p {
+    font-size: 1rem;
+  }
+
+  .main .images_section figure figcaption {
     font-size: 1rem;
   }
 

@@ -173,6 +173,9 @@ $main-color-light:rgb(55, 148, 255);
         display: grid;
         gap: 10px 10px;
         grid-template-columns: 1fr 1fr;
+        a{
+            text-decoration: none;
+        }
         .card{
             cursor: pointer;
             display: flex;
@@ -346,6 +349,85 @@ footer{
         list-style: none;
     }
 }
+.detail{
+    width: 80%;
+    margin: 1rem auto;
+    box-shadow: 0 5px 5px rgb(196, 196, 196);
+    color:black;
+    
+    .product{
+        width: 100%;
+        .image{
+            img{
+                width: 100%  ;
+            }
+        }
+        .product_detail{
+            h3{
+                font-weight: 400;
+                text-align: center;
+            }
+            margin:.3rem .5rem;
+        }
+        .price{
+            display: flex;
+            margin: .5rem 0;
+            align-items: center;
+            justify-content: space-between;
+            .price_number{
+                cursor: default;
+                color: red;
+                font-weight: 400;
+                del{
+                    font-weight: 400;
+                }
+            }
+            .price_discount{
+                color: white;
+                background: red;
+                display: inline-block;
+                padding: .5rem;
+                margin-bottom: .3rem;
+                cursor: default;
+            }
+        }
+    }
+}
+.comment_header{
+    width: 80%;
+    margin: 1rem auto;
+    text-align: center;
+    text-decoration: underline;
+    
+    
+}
+.comment{
+    width: 80%;
+    margin: 1rem auto;
+    padding: .4rem;
+    box-shadow: 0 5px 5px rgb(196, 196, 196);
+
+    h1{
+        font-weight: 400;
+    }
+    h5{
+        color: $main-color-light;
+    }
+    p{
+        color: black;
+    }
+}    
+.nocomment{
+    width: 80%;
+    margin: 1rem auto;
+    padding: .4rem;
+    box-shadow: 0 5px 5px rgb(196, 196, 196);
+    color: black;
+    h1{
+        color: red;
+        font-weight: 400;
+    }
+}
 .feedback{
     box-shadow: 0px 0px 15px  rgb(177, 174, 174);
     width: 50%;
@@ -412,7 +494,32 @@ footer{
         }
     }
 }
-// tablets and below
+@media (max-width: 575.98px) {
+    .hero_bg{
+        .hero_text{
+            h1{
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .login{
+        width: 80%;
+    }
+    .main{
+        .images_section{
+            figure{
+                figcaption{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+    footer{
+        main{
+            font-size: small;
+        }
+    }
+}
 @media (max-width: 767.98px) {
     
     .nav{
@@ -467,6 +574,15 @@ footer{
         }
     }   
     }
+    .main{
+        .images_section{
+            figure{
+                figcaption{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
     .login{
         .login_image{
             display: none;
@@ -486,7 +602,4 @@ footer{
         width: 80%;
     }
     
-}
-@media (max-width: 575.98px) {
-
 }
