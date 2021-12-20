@@ -399,7 +399,7 @@ footer .copy-right-footer {
 }
 
 .nocomment {
-  width: 80%;
+  width: 50%;
   margin: 1rem auto;
   padding: 0.4rem;
   box-shadow: 0 5px 5px #c4c4c4;
@@ -549,6 +549,10 @@ footer .copy-right-footer {
   }
 
   .detail {
+    width: 80%;
+  }
+
+  .nocomment {
     width: 80%;
   }
 

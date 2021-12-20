@@ -177,15 +177,17 @@
     <script>
         const comment=document.querySelector('#comment_group')
         const nocomment=document.getElementById('nocomment')
+        const form=document.querySelector('#comment_form')
         if (cEmail==null || cEmail==''){
             comment.hidden=true
             nocomment.hidden=false
+            form.hidden=true
         } else{
             nocomment.hidden=true
             comment.hidden=false
+            form.hidden=false
         }
 
-        const form=document.querySelector('#comment_form')
         const title=document.querySelector('#comment_title')
         const msg=document.querySelector('#comment_msg')
         form.addEventListener("submit",(e)=>{

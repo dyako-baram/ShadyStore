@@ -418,7 +418,7 @@ footer{
     }
 }    
 .nocomment{
-    width: 80%;
+    width: 50%;
     margin: 1rem auto;
     padding: .4rem;
     box-shadow: 0 5px 5px rgb(196, 196, 196);
@@ -568,6 +568,9 @@ footer{
         width: 80%;
     }
     .detail{
+        width: 80%;
+    }
+    .nocomment{
         width: 80%;
     }
     .nopage{
