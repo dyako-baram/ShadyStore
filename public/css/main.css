@@ -334,7 +334,7 @@ footer .copy-right-footer {
 }
 
 .detail {
-  width: 80%;
+  width: 50%;
   margin: 1rem auto;
   box-shadow: 0 5px 5px #c4c4c4;
   color: black;
@@ -383,7 +383,7 @@ footer .copy-right-footer {
 }
 
 .comment {
-  width: 80%;
+  width: 50%;
   margin: 1rem auto;
   padding: 0.4rem;
   box-shadow: 0 5px 5px #c4c4c4;
@@ -475,16 +475,48 @@ footer .copy-right-footer {
   width: 100%;
 }
 
+.comment_form {
+  width: 50%;
+  box-shadow: 0px 0px 15px #b1aeae;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.comment_form h1 {
+  text-align: center;
+}
+.comment_form .form_group input {
+  display: block;
+  width: 100%;
+  height: 30px;
+}
+.comment_form .form_group input[type=submit] {
+  width: 30%;
+  margin: 1rem auto;
+  padding: 0.3rem;
+  border: none;
+  color: white;
+  background-color: #3C72FF;
+  font-weight: 400;
+}
+
 .nopage {
   width: 50%;
   box-shadow: 0px 0px 15px #b1aeae;
   margin: 1rem auto;
   padding: 1rem;
 }
+.nopage video {
+  width: 100%;
+  margin: 1rem 0;
+}
 .nopage h1 {
   color: red;
   font-weight: 400;
   margin-bottom: 0.3rem;
+}
+.nopage p {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .privacy {
@@ -506,6 +538,18 @@ footer .copy-right-footer {
 @media (max-width: 575.98px) {
   .hero_bg .hero_text h1 {
     font-size: 1.4rem;
+  }
+
+  .comment_form {
+    width: 80%;
+  }
+
+  .comment {
+    width: 80%;
+  }
+
+  .detail {
+    width: 80%;
   }
 
   .nopage {

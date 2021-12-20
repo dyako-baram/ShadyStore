@@ -88,6 +88,20 @@
     <h1 class="comment_header">
         Comments
     </h1>
+    <form action="" class="comment_form" id="comment_form">
+      <h1>Add comment to this product</h1>
+      <div class="form_group">
+        <label for="">Title</label>
+        <input type="text" id="comment_title" required>
+      </div>
+      <div class="form_group">
+        <label for="">Message</label>
+        <input type="text" id="comment_msg" required>
+      </div>
+      <div class="form_group">
+        <input type="submit" value="Add Comment">
+      </div>
+    </form>
     <div class="comment_group" id="comment_group">
     <div class="comment">
         <h1>excellent</h1>
@@ -169,6 +183,22 @@
         } else{
             nocomment.hidden=true
             comment.hidden=false
+        }
+
+        const form=document.querySelector('#comment_form')
+        const title=document.querySelector('#comment_title')
+        const msg=document.querySelector('#comment_msg')
+        form.addEventListener("submit",(e)=>{
+          document.cookie = `title=${title.value.trim()}`;
+          document.cookie = `msg=${msg.value.trim()}`;
+        })
+        const t=getCookie("title")
+        const m=getCookie("msg")
+        if(cEmail != "" && cEmail!=null && t != "" && t!=null && m != "" && m!=null){
+          const para = document.createElement("DIV");
+          para.classList.add("comment");
+          para.innerHTML = `<h1>${t}</h1><h5>${cEmail}</h5><p>${m}</p>`;
+          comment.appendChild(para);
         }
     </script>
   </body>
