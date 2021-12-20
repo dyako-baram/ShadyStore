@@ -475,9 +475,45 @@ footer .copy-right-footer {
   width: 100%;
 }
 
+.nopage {
+  width: 50%;
+  box-shadow: 0px 0px 15px #b1aeae;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.nopage h1 {
+  color: red;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+
+.privacy {
+  width: 50%;
+  box-shadow: 0px 0px 15px #b1aeae;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.privacy p {
+  margin: 1rem 0;
+}
+.privacy ul {
+  list-style: none;
+}
+.privacy h2, .privacy h1 {
+  font-weight: 400;
+}
+
 @media (max-width: 575.98px) {
   .hero_bg .hero_text h1 {
     font-size: 1.4rem;
+  }
+
+  .nopage {
+    width: 80%;
+  }
+
+  .privacy {
+    width: 80%;
   }
 
   .login {

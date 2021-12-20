@@ -494,6 +494,32 @@ footer{
         }
     }
 }
+.nopage{
+    width: 50%;
+    box-shadow: 0px 0px 15px  rgb(177, 174, 174);
+    margin: 1rem auto;
+    padding: 1rem;
+    h1{
+        color: red;
+        font-weight: 400;
+        margin-bottom: .3rem;
+    }
+}
+.privacy{
+    width: 50%;
+    box-shadow: 0px 0px 15px  rgb(177, 174, 174);
+    margin: 1rem auto;
+    padding: 1rem;
+    p{
+        margin: 1rem 0;
+    }
+    ul{
+        list-style: none;
+    }
+    h2,h1{
+        font-weight: 400;
+    }
+}
 @media (max-width: 575.98px) {
     .hero_bg{
         .hero_text{
@@ -501,6 +527,12 @@ footer{
                 font-size: 1.4rem;
             }
         }
+    }
+    .nopage{
+        width: 80%;
+    }
+    .privacy{
+       width: 80%; 
     }
     .login{
         width: 80%;

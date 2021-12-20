@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>FeedBack</title>
+    <title>Store | Home</title>
   </head>
   <body>
-    <!-- nav area -->
+    <!-- navigation area -->
     <nav class="nav">
       <!-- svg logo -->
       <a href="index.html" title="Home">
@@ -41,9 +41,9 @@
         </svg>
       </a>
       <a href="#" class="burger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </a>
       <ul class="links">
         <li>
@@ -59,93 +59,16 @@
           <a href="feedback.html" title="FeedBack">FeedBack</a>
         </li>
         <li>
-          <a href="login.html" title="login/signup" id="login_signed">login/signup</a>
+          <a href="login.html" title="login/signup" id="login_signed"
+            >login/signup</a
+          >
         </li>
       </ul>
     </nav>
-
-    <!-- Feedback are -->
-    <div class="feedback">
-        <div class="heading">
-            <h1>FeedBack</h1>
-            <h4>please fill this form for any type of feedback</h4>
-        </div>
-      <form action="">
-          <div class="form_group">
-            <label for="subject">subject title:</label>
-            <input type="text" name="" id="">  
-          </div>
-          <div class="form_group">
-            <label for="subject">email:</label>
-            <input type="email" name="" id="">
-          </div>
-          <div class="form_group">
-            <label for="subject">message:</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-          </div>
-          <div class="form_group_btn">
-              <input type="submit" value="Send">
-              <input type="reset" value="reset">
-          </div>
-      </form>
+    <div class="nopage">
+        <h1>Error 404</h1>
+        <p>I'm afraid you've found a page that doesn't exist on ShadyStore. That can happen when you follow a link to something that has since been deleted. Or the link was incorrect to begin with.</p>
     </div>
-
-    <!-- Footer area -->
-    <footer>
-      <p
-        id="myEmail"
-        style="
-          text-align: center;
-          font-size: 1.3rem;
-          margin-top: 0.3rem;
-          color: #3c72ff;
-        "
-      ></p>
-      <main>
-        <section class="product_section_footer">
-          <h2 class="footer_section_header">products</h2>
-          <ul>
-            <li><a href="#">Pc</a></li>
-            <li><a href="#">Laptop</a></li>
-            <li><a href="#">Mobile</a></li>
-            <li><a href="#">Tablet</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Hardware</a></li>
-          </ul>
-        </section>
-        <section class="contact_section_footer">
-          <h2 class="footer_section_header">Contact</h2>
-          <h4>Locaton: sulaimani</h4>
-          <h4>Phone Number: 07901234567</h4>
-          <h4>
-            Email:
-            <a class="email-link" href="mailto:example@gmail.com"
-              >example@gmail.com</a
-            >
-          </h4>
-          <h4><a href="privacy.html">Privacy Policies</a></h4>
-        </section>
-        <section class="contact_section_footer">
-          <h2 class="footer_section_header">social media</h2>
-          <div class="links_section_footer">
-            <a href="#facebook">facebook</a>
-            <a href="#instagram">instagram</a>
-            <a href="#youtube">youtube</a>
-            <a href="#snapchat">snapchat</a>
-          </div>
-        </section>
-      </main>
-
-      <section class="copy-right-footer">
-        <p>Shady Store &copy; 2021</p>
-      </section>
-    </footer>
-    <script>
-      const toggle = document.getElementsByClassName("burger")[0];
-      const nav = document.getElementsByClassName("links")[0];
-      toggle.addEventListener("click", () => {
-        nav.classList.toggle("active");
-      });
-    </script>
+    <script src="js/app.js"></script>
   </body>
 </html>
