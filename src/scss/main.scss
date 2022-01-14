@@ -175,6 +175,7 @@ $main-color-light:rgb(55, 148, 255);
         grid-template-columns: 1fr 1fr;
         a{
             text-decoration: none;
+            display: block;
         }
         .card{
             cursor: pointer;

@@ -68,15 +68,18 @@
     <main class="detail">
       <section class="product">
         <div class="image">
-          <img src="img/pc.jpg" alt="" lazy/>
+          <img id="imgParam" src="img/pc.jpg" alt="" lazy/>
         </div>
         <div class="product_detail">
           <h3>Detail</h3>
-          <p>AMD Ryzen 5 5600X Processor,</p>
-          <p>16GB DDR4-3200 RGB RAM</p>
-          <p>GeForce RTX 3060 - 12GB,</p>
-          <p>500GB M.2 NVMe</p>
-          <p>1TB HDD</p>
+          <ul style="list-style: none;" id="ulBody">
+            <li>AMD Ryzen 5 5600X Processor,</li>
+            <li>16GB DDR4-3200 RGB RAM</li>
+            <li>GeForce RTX 3060 - 12GB,</li>
+            <li>500GB M.2 NVMe</li>
+            <li>1TB HDD</li>
+          </ul>
+          
           <div class="price">
             <div class="price_number">$1,399 <del>$1,649</del></div>
             <div class="price_discount">save $250</div>
@@ -175,6 +178,19 @@
     </footer>
     <script src="js/app.js"></script>
     <script>
+        const urlParams=new URLSearchParams(window.location.search)
+        const imgParam=urlParams.get('img')
+        const bodyParam=decodeURI(urlParams.get('body'))
+
+        const imgParamHtml=document.querySelector('#imgParam')
+        const ulBody=document.querySelector('#ulBody')
+        if (urlParams.has('img')) {
+          imgParamHtml.src='img/'+imgParam+'.jpg'
+        }
+        if (urlParams.get('body')) {
+          ulBody.innerHTML=bodyParam
+        }
+
         const comment=document.querySelector('#comment_group')
         const nocomment=document.getElementById('nocomment')
         const form=document.querySelector('#comment_form')

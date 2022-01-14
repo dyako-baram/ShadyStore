@@ -171,6 +171,7 @@
 }
 .shop_section .shop_main a {
   text-decoration: none;
+  display: block;
 }
 .shop_section .shop_main .card {
   cursor: pointer;
